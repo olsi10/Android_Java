@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <Button
+            android:text="메뉴1"
+            android:backgroundTint="#347837"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:id="@+id/btn1"/>
+
+        <Button
+            android:text="메뉴2"
+            android:backgroundTint="#275A29"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:id="@+id/btn2"/>
+
+
+        <Button
+            android:text="메뉴3"
+            android:backgroundTint="#1C431E"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:id="@+id/btn3"/>
+    </GridLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="메뉴1 국민의 힘"
+            android:textSize="30dp"
+            android:id="@+id/txt1"
+            android:drawableTop="@drawable/yun"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="메뉴2 국민의당"
+            android:textSize="30dp"
+            android:background="#0088FF"
+            android:id="@+id/txt2"
+            android:drawableTop="@drawable/an"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="메뉴3 정의당"
+            android:textSize="30dp"
+            android:background="#FFC107"
+            android:id="@+id/txt3"
+            android:drawableTop="@drawable/to"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
