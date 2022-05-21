@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:text="학점 계산기"
+        android:gravity="center"
+        android:background="#FF0000"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작하기"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/swStart"/>
+
+    <TableLayout android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:text="이름 : "
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:id="@+id/edtName"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="학년 :"
+                android:layout_marginTop="10dp"/>
+
+           <RadioGroup android:id="@+id/rgGrade" android:orientation="horizontal">
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1"
+                   android:id="@+id/rb1"/>
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="2"
+                   android:id="@+id/rb2"/>
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="3"
+                   android:id="@+id/rb3"/>
+
+
+           </RadioGroup>
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모든 항목을 100점 만점으로 입력할 것"
+            android:textColor="#FF0000"
+            android:layout_marginTop="10dp"/>
+
+        <TableRow>
+
+            <TextView
+                android:text="중간고사 : "
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:id="@+id/midTest"
+                android:inputType="numberDecimal"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="기말고사 : "
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:id="@+id/endTest"
+                android:inputType="numberDecimal"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="수행평가 : "
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:id="@+id/Test"
+                android:inputType="numberDecimal"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="출석점수 : "
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:id="@+id/Check"
+                android:inputType="numberDecimal"
+                android:text="0"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="학점계산"
+        android:layout_marginRight="10dp"
+        android:id="@+id/calBtn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="초기화"
+        android:id="@+id/initBtn"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
